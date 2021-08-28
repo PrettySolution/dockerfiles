@@ -1,10 +1,9 @@
 pptp:
-  image: vimagick/pptp
+  build: .
   environment:
-    - SERVER=192.168.31.222
+    - SERVER=91.207.210.225
     - TUNNEL=vps
-    - USERNAME=username
-    - PASSWORD=password
+    - USERNAME=centos0
+    - PASSWORD=centos0
   net: host
   privileged: yes
-  restart: unless-stopped
